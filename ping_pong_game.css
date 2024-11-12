@@ -1,0 +1,105 @@
+.GameInfo {
+    display: grid;
+    grid-area: Content;
+    grid-auto-rows: min-content;
+    grid-template-columns: 40% auto;
+    gap: 10%;
+    grid-template-areas:
+    'ping h1'
+    'ping h2'
+    'ping h3'
+    'ping trailer'
+    'ping button';
+    
+}
+
+main {
+    padding-top: 10%;
+}
+
+#add2cart {
+    display: flex;
+    grid-area: button;
+    justify-self: left;
+    
+
+}
+
+.ping_pong_game {
+    grid-area: ping;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    font-size: 150%;
+}
+
+h1 {
+    display: flex;
+    grid-area: h1;
+}
+
+h2 {
+    display: flex;
+    grid-area: h2;
+}
+
+h3 {
+    display: flex;
+    grid-area: h3;
+}
+
+#trailer {
+    display: flex;
+    grid-area: trailer;
+}
+
+@media all and (max-width: 1100px){
+    .grid-container {
+        row-gap: 100%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .grid-container {
+        row-gap: 70%;
+    }
+}
+
+@media all and (max-width: 450px) {
+    h1, h2, h3 {
+        font-size: 80%;
+    }
+
+    .GameInfo {
+        gap: 10%;
+    }
+
+    .trailer img {
+        width: 20%;
+        height: auto;
+    }
+
+    #add2cart {
+        padding: 5px 5px;
+        font-size: 60%;
+    }
+
+    .grid-container {
+        row-gap: 120%;
+    }
+
+
+}
+
+@media all and (max-width: 400px) {
+    .grid-container {
+        row-gap: 80%;
+    }
+}
+
