@@ -1,104 +1,50 @@
-body {
-    background-color: #16AC91;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-
-.content {
-    color: white;
-    padding-top: 100px;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    font-size: 1.5em;
-    
-}
-
-h1, h2 {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #1B203D;
+main {
+    padding-top: 10%;
+    gap: 5%;
+    grid-template-areas: 
+    'h1'
+    'Logo'
+    'form';
 }
 
 
 
-.navbar {
-    font-size: 1.5em;
+section {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: column;
-    flex-wrap:wrap;
-    list-style: none;
-    padding-left: 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    margin: 0;
-    background-color: #1B203D;
-    height: 80px;
+    align-items: center;
+    gap: 1rem;
 }
 
-.navbar a {
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    padding: 0.5em;
+form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-.navbar a:hover {
-    background: blue;
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-
-@media all and (max-width: 800px) {
-    .navbar {
-        justify-content: space-around;
-    }
-}
-
-@media all and (max-width: 600px) {
-    .navbar {
-        flex-flow: column wrap;
-        font-size: 0.75em;
-        flex-direction: column;
-        height: 40px;
-    }
-    h1, h2, h3 {
-        font-size: 1em;
-    }
-    
-    
-}
-@media all and (max-width: 600px) {
-    .navbar img {
-        width: 10px;
-        height: 10px;
-    }
-}
-
-.navbar img {
-    width: 2em;
-    height: 2em;
-    margin-right: auto;
-}
-
-a {
-    text-decoration: none;
+#Send {
     color: white;
 }
 
-#MainpageLogo {
-    width: 37%;
-    height: 37%;
+@media all and (max-width: 1200px) {
+    #BrowseButton {
+        width: 170px;
+        height: 30px;
+    }
 }
 
-.buttons {
-    background-color: #1B203D;
-    border-radius: 5px;
-    padding: 0.75%;
-    font-weight: bold;
-    text-decoration: none;
-    list-style-type: none;
+@media all and (max-width: 1000px) {
+    .MainPageLogo {
+        width: 70%;
+    }
 }
+
+
